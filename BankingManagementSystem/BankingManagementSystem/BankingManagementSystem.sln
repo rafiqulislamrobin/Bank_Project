@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankingManagementSystem.Web", "BankingManagementSystem.Web\BankingManagementSystem.Web.csproj", "{D30AE9DA-7CAA-4858-B6B9-80B2F719B9C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankingManagementSystem.Membership", "BankingManagementSystem.Membership\BankingManagementSystem.Membership.csproj", "{C57A3736-3C79-4A95-A928-3DF1D5818A8E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D30AE9DA-7CAA-4858-B6B9-80B2F719B9C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D30AE9DA-7CAA-4858-B6B9-80B2F719B9C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D30AE9DA-7CAA-4858-B6B9-80B2F719B9C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D30AE9DA-7CAA-4858-B6B9-80B2F719B9C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C57A3736-3C79-4A95-A928-3DF1D5818A8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C57A3736-3C79-4A95-A928-3DF1D5818A8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C57A3736-3C79-4A95-A928-3DF1D5818A8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C57A3736-3C79-4A95-A928-3DF1D5818A8E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {225F251F-5537-47C5-A330-5E657AD089F2}
+	EndGlobalSection
+EndGlobal

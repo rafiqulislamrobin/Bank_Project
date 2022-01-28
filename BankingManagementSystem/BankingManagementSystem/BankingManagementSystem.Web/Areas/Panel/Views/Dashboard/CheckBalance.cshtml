@@ -1,0 +1,101 @@
+﻿@{
+    ViewData["Title"] = "CheckBalance";
+}
+
+<header class="mb-3">
+    <a href="#" class="burger-btn d-block d-xl-none">
+        <i class="bi bi-justify fs-3"></i>
+    </a>
+</header>
+
+<div class="page-heading">
+    <h3>Account</h3>
+</div>
+<div class="page-content">
+    <section class="row">
+        <div class="col-12 col-lg-9">
+            <div class="row">
+            </div>
+            <div class="row">
+            </div>
+            <div class="row">
+                <div class="col-12 col-xl-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Profile Visit</h4>
+                        </div>
+                        @if (TempData["Balance"] != null)
+                        {
+                            <div class="alert alert-success" style="margin-top:5px"><strong> @TempData["Balance"] </strong></div>
+
+                        }
+                        @if (TempData["Transfer"] != null)
+                        {
+                            <div class="alert alert-success" style="margin-top:5px"><strong> @TempData["Transfer"] </strong></div>
+                        }
+                        @if (TempData["failed"] != null)
+                        {
+                            <div class="alert alert-danger" style="margin-top:5px"><strong> @TempData["failed"] </strong></div>
+                        }
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-flex align-items-center">
+
+                                        <a class="btn btn-primary" asp-controller="Dashboard"
+                                           asp-action="CheckBalance">Check Balance</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-flex align-items-center">
+
+                                        <a class="btn btn-secondary" asp-controller="Dashboard"
+                                           asp-action="AddBalance">Add Balance</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-flex align-items-center">
+
+                                        <a class="btn btn-info" asp-controller="Dashboard"
+                                           asp-action="WithdrawBalances">Withdraw</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <br />
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-flex align-items-center">
+                                        <a class="btn btn-success" asp-controller="Dashboard"
+                                           asp-action="TransferBalance">Transfer</a>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-8">
+                    <div class="card">
+
+                        <div class="card-body">
+                            <div class="table-responsive">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</div>
+
